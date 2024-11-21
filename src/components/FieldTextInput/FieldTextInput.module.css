@@ -11,3 +11,10 @@
 .inputError {
   border: var(--borderErrorField);
 }
+#EditListingDetailsForm_pub_Model {
+  width: 100px; /* Adjust the width */
+  height: 60px; /* Adjust the height */
+  max-width: 100%; /* Ensure responsiveness */
+  max-height: 200px; /* Prevent excessive resizing */
+  resize: horizontal; /* Allow vertical resizing if necessary */
+}

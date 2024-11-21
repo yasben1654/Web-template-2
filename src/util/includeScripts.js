@@ -146,7 +146,10 @@ export const IncludeScripts = props => {
       }
     }
   };
+const fontscript = (<style>
+  ['@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');']
+  </style>);
 
-  const allScripts = [...analyticsLibraries, ...mapLibraries];
+  const allScripts = [...analyticsLibraries, ...mapLibraries, fontscript];
   return <Helmet onChangeClientState={onChangeClientState}>{allScripts}</Helmet>;
 };
